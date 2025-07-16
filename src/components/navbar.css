@@ -1,0 +1,55 @@
+/* styles/Navbar.css */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  color: #ffffff;
+}
+
+.nav-route {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.nav-route:hover {
+  background-color: #444;
+}
+
+.nav-route.active {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-button:hover {
+  color: #bc1ab4;
+  text-decoration: underline;
+}

@@ -1,0 +1,160 @@
+/* BASE CONTAINER */
+.admin-container {
+  padding: 2rem;
+  margin-top: 5rem;
+  color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FORM STYLING */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 450px;
+  background: linear-gradient(145deg, rgba(0, 255, 255, 0.07), rgba(255, 255, 0, 0.07));
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), 0 0 12px rgba(255, 255, 0, 0.2);
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid #00ffff88;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  transition: border 0.2s ease;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus {
+  border-color: #ffff00;
+  outline: none;
+}
+
+.admin-form textarea {
+  resize: vertical;
+}
+
+.admin-form button {
+  margin-top: 1rem;
+  background: transparent;
+  border: 2px solid #ffff00;
+  color: #ffff00;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.admin-form button:hover {
+  background: #ffff00;
+  color: #000;
+}
+
+/* DIVIDER */
+.admin-divider {
+  margin: 2.5rem 0;
+  border-color: #00ffff33;
+}
+
+/* FILTERS */
+.admin-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-filters input,
+.admin-filters select {
+  padding: 0.6rem;
+  background: rgba(30, 30, 30, 0.9);
+  border: 1px solid #00ffff88;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* LIMIT SELECTOR */
+.admin-limit-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  color: #ccc;
+}
+
+.admin-limit-selector select {
+  background: #1e1e1e;
+  color: #fff;
+  border: 1px solid #ffff00aa;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+}
+
+/* TABLE STYLING */
+.admin-table {
+  margin-top: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.15), 0 0 8px rgba(255, 255, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: rgba(0, 255, 255, 0.1);
+  color: #00ffff;
+  text-shadow: 0 0 4px #00ffff88;
+}
+
+.admin-table td {
+  color: #e0e0e0;
+}
+
+/* PAGINATION */
+.admin-pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.admin-pagination button {
+  background: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-pagination button:hover {
+  background: #ffff00;
+  color: #000;
+  border-color: #ffff00;
+}
+
+.admin-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
